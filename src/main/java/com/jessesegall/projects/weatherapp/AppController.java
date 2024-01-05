@@ -43,7 +43,7 @@ public class AppController {
                     );
                 });
             } catch (IOException e) {
-                e.printStackTrace(); // Handle this exception more gracefully in production code
+                e.printStackTrace();
             }
         });
     } else {
