@@ -12,14 +12,15 @@ import java.util.concurrent.Executors;
 
 public class AppController {
 
+    public Label welcomeText;
     @FXML
     private TextField cityTextField;
 
     @FXML
     private Label weatherDataLabel;
 
-    private WeatherService weatherService = new WeatherService();
-    private ExecutorService executorService = Executors.newSingleThreadExecutor();
+    private final WeatherService weatherService = new WeatherService();
+    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     public AppController() throws IOException {
     }
